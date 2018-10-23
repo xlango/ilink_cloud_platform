@@ -1,0 +1,17 @@
+server:
+  port: ${SERVER_PORT:11111}
+async:
+  threadpool:
+    corePoolSize: ${CORE_POOL_SIZE:20}
+    maxPoolSize: ${MAX_POOL_SIZE:500}
+    queueCapacity: ${QUEUE_CAPACITY:500}
+    keepAliveSeconds: ${KEEPALIVE_SECONDS:60}
+kafka:
+  messageTopic: ${MESSAGE_TOPIC:messageReceiver}
+  bootstrapServers: ${BOOTSTRAP_SERVERS:127.0.0.1:9092}
+  batchSize: 16384
+  lingerMs: 1000
+udp:
+  port:
+    apUserInfoServerPort: ${AP_USERINFO_SERVER_PORT:12222}
+    userInternetLogServerPort: ${USER_INTERNET_LOG_SERVER_PORT:13333}

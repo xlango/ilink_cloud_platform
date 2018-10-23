@@ -1,0 +1,23 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+//生成的数据访问类的类名，如果没有指定此值，则生成的类名为proto文件名的驼峰命名方法
+option java_outer_classname = "ApOfflineStaInfoProto";
+option java_package = "com.qianli.ilink.cloud_platform.messagecenter.pojo.dto";
+//protoc ./ApOfflineStaInfo.proto --java_out=/Users/kangjuaner/Other_IdeaProjects/cloud_platform/messagecenter/src/main/java
+message ApOfflineStaInfo {
+    string ap_mac = 1;
+    string sta_mac = 2;
+    string bssid_mac = 3;
+}
+
+message TotalApOfflineStaInfo {
+    int32 total = 1;
+    repeated ApOfflineStaInfo offline_sta = 2;
+}
+
+
+
+
+
+
+

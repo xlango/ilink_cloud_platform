@@ -1,0 +1,56 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+//生成的数据访问类的类名，如果没有指定此值，则生成的类名为proto文件名的驼峰命名方法
+option java_outer_classname = "ApUserInfoProto";
+option java_package = "com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto";
+
+//protoc ./ApUserInfo.proto --java_out=/Users/kangjuaner/Other_IdeaProjects/cloud_platform/messagecenter-udp/src/main/java
+
+enum HttpMethod {
+    OTHER = 0;
+    GET = 1;
+    POST = 2;
+}
+
+message UserAppInfo
+{
+    string ap_mac = 1;
+    string sta_mac = 2;
+    uint32 app_id = 3;
+    uint32 src_ip = 4;
+    uint32 dest_ip = 5;
+    uint32 proto = 6;
+    uint32 src_port = 7;
+    uint32 dest_port = 8;
+    uint64 timestamp = 9;
+    string dest_mac = 10;
+    string app_account = 11;
+    string app_password = 12;
+    string app_nickname = 13;
+    string app_avatar = 14;
+    string telephone_number = 15;
+    string telephone_imei = 16;
+    string telephone_meid = 17;
+    string telephone_system = 18;
+    string telephone_model = 19;
+    string telephone_imsi = 20;
+    string telephone_cpu = 21;
+    string identity_card = 22;
+    string access_url = 23;
+    HttpMethod http_method = 24;
+    string gps_info = 25;
+    string search_keyword = 26;
+    string mail_recevier = 27;
+    string mail_subject = 28;
+    string mail_content = 29;
+    string posts_topics = 30;
+    string posts_content = 31;
+}
+
+
+message APUserInfo
+{
+    repeated UserAppInfo user_app_info = 1;
+}
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commons" />
+        <module name="eureka-server" />
+        <module name="gateway" />
+        <module name="messagecenter" />
+        <module name="messagecenter-udp" />
+        <module name="oauth2-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud_platform" target="1.8" />
+      <module name="commons" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="messagecenter" target="1.8" />
+      <module name="messagecenter-udp" target="1.8" />
+      <module name="oauth2-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

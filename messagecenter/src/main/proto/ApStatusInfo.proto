@@ -1,0 +1,19 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+//生成的数据访问类的类名，如果没有指定此值，则生成的类名为proto文件名的驼峰命名方法
+option java_outer_classname = "ApStatusInfoProto";
+option java_package = "com.qianli.ilink.cloud_platform.messagecenter.pojo.dto";
+
+message ApStatusInfo {
+    string ap_mac = 1;
+    int32 rx_bytes = 2;
+    int32 tx_bytes = 3;
+    int32 total_user= 4;
+    int64 last_timestamp=5;
+    int64 cur_timestamp=6;
+}
+
+
+
+
+

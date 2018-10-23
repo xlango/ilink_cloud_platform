@@ -1,0 +1,12 @@
+server:
+  port: 8888
+logging:
+  level:
+    org.springframework: info
+cloudplatform:
+  security:
+    oauth2:
+      jwtSigningKey: cloud_platform_jwt_signing_key
+      clients[0]:
+        clientId: cloud_platform_clientId
+        clientSecret: cloud_platform_secret

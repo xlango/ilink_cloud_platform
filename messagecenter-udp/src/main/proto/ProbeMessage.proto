@@ -1,0 +1,46 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+//生成的数据访问类的类名，如果没有指定此值，则生成的类名为proto文件名的驼峰命名方法
+option java_outer_classname = "ProbeMessageProto";
+option java_package = "com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto";
+
+//protoc ./ProbeMessage.proto --java_out=/Users/kangjuaner/Other_IdeaProjects/cloud_platform/messagecenter-udp/src/main/java
+
+message ProbePhoneInfo {
+    string  probe_ap_mac = 1;
+    string  phone_mac = 2;
+    int32  sta_rssi = 3;
+    int32  timestamp =4;
+    string  ap_bssid = 5;
+    int32  mobility = 6;
+    int32  channel = 7;
+}
+
+message ProbeHotspotInfo {
+    string  probe_ap_mac = 1;
+    string  hotspot_mac = 2;
+    string  hotspot_essid = 3;
+    int32  hotspot_rssi = 4;
+    int32  hotspot_channel = 5;
+    int32  hotspot_auth_type = 6;
+    int32  timestamp = 7;
+}
+
+message ProbeAPLocationInfo{
+    string  probe_ap_mac = 1;
+    float  gps_longi = 2;
+    float  gps_lati = 3;
+    int32  timestamp = 4;
+    string  probe_ap_ip = 5;
+    int32  support_gps = 6;
+    int32  work_mode = 7;
+};
+
+message Probe_Message {
+    string  probe_ap_mac = 1;
+    repeated  ProbePhoneInfo probe_phone_info = 2;
+    repeated  ProbeHotspotInfo probe_hotsport_info = 3;
+    ProbeAPLocationInfo ProbeAPLocationInfo = 4;
+    //???这里定义错了吧？
+}
+

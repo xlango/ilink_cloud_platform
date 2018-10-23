@@ -1,0 +1,29 @@
+// 如果使用此注释，则使用proto3; 否则使用proto2
+syntax = "proto3";
+//生成的数据访问类的类名，如果没有指定此值，则生成的类名为proto文件名的驼峰命名方法
+option java_outer_classname = "UserInternetLogProto";
+option java_package = "com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto";
+//protoc ./UserInternetLog.proto --java_out=/Users/kangjuaner/Other_IdeaProjects/cloud_platform/messagecenter-udp/src/main/java
+message UserInternetLog{
+    string ap_mac = 1;
+    uint64 log_timestamp = 2;
+    string app_service_code = 3;
+    string sta_ip = 4;
+    string src_port = 5;
+    string outif_ip = 6;
+    int32 start_port = 7;
+    int32 end_port =8;
+    string dest_ip = 9;
+    string sta_mac = 10;
+    string app_type = 11;
+    string access_url = 12;
+    string gps_longi = 13;
+    string gps_lati = 14;
+}
+
+message TotalUserInternetLog{
+    int32 total = 1;
+    repeated UserInternetLog user_internet_log =2;
+}
+
+

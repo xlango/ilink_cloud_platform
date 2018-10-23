@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cloud-platform-eureka-server
+server:
+  port: 8000
+logging:
+  level:
+    com: debug
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer1:8001/eureka/
