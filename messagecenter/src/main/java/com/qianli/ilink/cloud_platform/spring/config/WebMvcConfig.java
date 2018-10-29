@@ -1,11 +1,11 @@
-package com.qianli.ilink.cloud_platform.messagecenter.core.config;
+package com.qianli.ilink.cloud_platform.spring.config;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.qianli.ilink.cloud_platform.messagecenter.core.config.properties.AsyncThreadPoolProperties;
+import com.qianli.ilink.cloud_platform.spring.config.properties.AsyncThreadPoolProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
