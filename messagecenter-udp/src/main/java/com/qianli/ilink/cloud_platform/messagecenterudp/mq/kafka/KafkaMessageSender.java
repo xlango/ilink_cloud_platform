@@ -1,5 +1,6 @@
-package com.qianli.ilink.cloud_platform.messagecenterudp.kafka;
+package com.qianli.ilink.cloud_platform.messagecenterudp.mq.kafka;
 
+import com.qianli.ilink.cloud_platform.spring.properties.KafkaProducerProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -18,7 +19,7 @@ import java.util.Properties;
 public class KafkaMessageSender{
 
     @Autowired
-    private KafkaProducerConfig kafkaConfig;
+    private KafkaProducerProperties kafkaProducerProperties;
 
     private KafkaProducer<String,String> producer;
 
@@ -26,15 +27,15 @@ public class KafkaMessageSender{
     public void start(){
         log.info("kafka producer initialize..");
         Properties properties = new Properties();
-        properties.put("bootstrap.servers",kafkaConfig.getBootstrapServers());
+        properties.put("bootstrap.servers",kafkaProducerProperties.getBootstrapServers());
         properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         properties.put("retries", 0);
         properties.put("acks","1");
         properties.put("buffer.memory",33554432);
         //1s or 到达batch.size 发送一次
-        properties.put("batch.size",kafkaConfig.getBatchSize());
-        properties.put("linger.ms",kafkaConfig.getLingerMs());
+        properties.put("batch.size",kafkaProducerProperties.getBatchSize());
+        properties.put("linger.ms",kafkaProducerProperties.getLingerMs());
         producer = new KafkaProducer<>(properties);
         log.info("kafka producer start successful..");
     }

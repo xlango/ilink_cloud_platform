@@ -1,4 +1,4 @@
-package com.qianli.ilink.cloud_platform.messagecenterudp.spring.properties;
+package com.qianli.ilink.cloud_platform.spring.properties;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,13 +7,20 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-@ConfigurationProperties(prefix = "udp.port")
 @Component
+@ConfigurationProperties(prefix = "kafka")
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UdpPortProperties {
-    private int apUserInfoServerPort;
-    private int userInternetLogServerPort;
+public class KafkaProducerProperties {
+
+    private String messageTopic;
+
+    private String bootstrapServers;
+
+    private int batchSize;
+
+    private int lingerMs;
+
 }

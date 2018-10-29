@@ -1,6 +1,6 @@
-package com.qianli.ilink.cloud_platform.messagecenterudp.spring;
+package com.qianli.ilink.cloud_platform.spring;
 
-import com.qianli.ilink.cloud_platform.messagecenterudp.spring.properties.AsyncThreadPoolProperties;
+import com.qianli.ilink.cloud_platform.spring.properties.AsyncThreadPoolProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

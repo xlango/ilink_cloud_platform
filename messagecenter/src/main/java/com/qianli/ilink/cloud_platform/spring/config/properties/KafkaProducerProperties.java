@@ -1,4 +1,4 @@
-package com.qianli.ilink.cloud_platform.messagecenterudp.kafka;
+package com.qianli.ilink.cloud_platform.spring.config.properties;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class KafkaProducerConfig {
+public class KafkaProducerProperties {
 
     private String messageTopic;
 

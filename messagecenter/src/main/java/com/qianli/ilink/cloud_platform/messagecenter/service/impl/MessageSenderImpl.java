@@ -2,7 +2,7 @@ package com.qianli.ilink.cloud_platform.messagecenter.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.qianli.ilink.cloud_platform.messagecenter.mq.kafka.KafkaMessageSender;
-import com.qianli.ilink.cloud_platform.messagecenter.mq.kafka.KafkaProducerConfig;
+import com.qianli.ilink.cloud_platform.spring.config.properties.KafkaProducerProperties;
 import com.qianli.ilink.cloud_platform.messagecenter.pojo.dto.Message;
 import com.qianli.ilink.cloud_platform.messagecenter.service.MessageSender;
 import com.qianli.ilink.cloud_platform.messagecenter.utils.IdGenerater;
@@ -20,7 +20,7 @@ public class MessageSenderImpl implements MessageSender {
     private KafkaMessageSender kafkaMessageSender;
 
     @Autowired
-    private KafkaProducerConfig kafkaConfig;
+    private KafkaProducerProperties kafkaConfig;
 
     @Async(value = "messageExecutor")
     @Override

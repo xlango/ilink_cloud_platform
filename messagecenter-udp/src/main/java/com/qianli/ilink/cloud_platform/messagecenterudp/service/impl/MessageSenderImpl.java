@@ -4,8 +4,8 @@ import com.alibaba.fastjson.JSON;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.googlecode.protobuf.format.JsonFormat;
 import com.qianli.ilink.cloud_platform.messagecenterudp.enums.MessageType;
-import com.qianli.ilink.cloud_platform.messagecenterudp.kafka.KafkaMessageSender;
-import com.qianli.ilink.cloud_platform.messagecenterudp.kafka.KafkaProducerConfig;
+import com.qianli.ilink.cloud_platform.messagecenterudp.mq.kafka.KafkaMessageSender;
+import com.qianli.ilink.cloud_platform.spring.properties.KafkaProducerProperties;
 import com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ApUserInfoProto;
 import com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.Message;
 import com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.UserInternetLogProto;
@@ -16,7 +16,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 @Slf4j
 @Service
@@ -26,7 +25,7 @@ public class MessageSenderImpl implements MessageSender {
     private KafkaMessageSender kafkaMessageSender;
 
     @Autowired
-    private KafkaProducerConfig kafkaConfig;
+    private KafkaProducerProperties kafkaConfig;
 
     @Async(value = "messageExecutor")
     @Override

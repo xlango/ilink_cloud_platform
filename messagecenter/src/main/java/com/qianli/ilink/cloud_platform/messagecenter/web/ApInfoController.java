@@ -55,13 +55,4 @@ public class ApInfoController {
     }
 
 
-//    @RequestMapping(value = "/getServiceInstances", method = RequestMethod.GET)
-//    public String getServiceInstances() {
-//        List<ServiceInstance> serviceInstanceList = discoveryClient.getInstances("MESSAGECENTER");
-//        if(serviceInstanceList != null && serviceInstanceList.size() > 0){
-//            return JSON.toJSONString(serviceInstanceList.get(0));
-//        }
-//        return "1111";
-//    }
-
 }

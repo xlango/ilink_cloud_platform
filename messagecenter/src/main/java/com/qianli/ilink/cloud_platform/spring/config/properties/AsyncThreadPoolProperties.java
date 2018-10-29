@@ -1,4 +1,4 @@
-package com.qianli.ilink.cloud_platform.messagecenterudp.spring.properties;
+package com.qianli.ilink.cloud_platform.spring.config.properties;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
