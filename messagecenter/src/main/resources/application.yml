@@ -1,7 +1,7 @@
 server:
-  port: ${SERVER_PORT:9000}
-  servlet:
-    context-path: /messagecenter
+  port: ${SERVER_PORT:18888}
+#  servlet:
+#    context-path: /messagecenter
 spring:
   application:
     name: messagecenter
@@ -13,6 +13,6 @@ async:
     keepAliveSeconds: ${KEEPALIVE_SECONDS:60}
 kafka:
   messageTopic: ${MESSAGE_TOPIC:messageReceiver}
-  bootstrapServers: ${BOOTSTRAP_SERVERS:127.0.0.1:9092}
+  bootstrapServers: ${BOOTSTRAP_SERVERS:192.168.10.29:9092}
   batchSize: 16384
   lingerMs: 5000

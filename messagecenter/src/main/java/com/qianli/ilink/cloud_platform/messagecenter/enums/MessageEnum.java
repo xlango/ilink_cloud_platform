@@ -11,7 +11,8 @@ public enum MessageEnum implements BaseEnum{
     AP_BASE_INFO(0,"AP_BASE_INFO","apbaseinfo"),
     AP_STATUS_INFO(1,"AP_STATUS_INFO","apstatusinfo"),
     AP_ONLINE_STA_INFO(2,"AP_ONLINE_STA_INFO","aponlinestainfo"),
-    AP_OFFLINE_STA_INFO(3,"AP_OFFLINE_STA_INFO","apofflinestainfo"),;
+    AP_OFFLINE_STA_INFO(3,"AP_OFFLINE_STA_INFO","apofflinestainfo"),
+    BASE_INFO(4,"BASE_INFO","baseinfo"),;
 
     private int code;
     private String msg;

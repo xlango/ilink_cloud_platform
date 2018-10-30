@@ -1,7 +1,7 @@
 package com.qianli.ilink.cloud_platform.messagecenterudp.udp;
 
 
-import com.qianli.ilink.cloud_platform.spring.properties.UdpPortProperties;
+import com.qianli.ilink.cloud_platform.messagecenter.spring.properties.UdpPortProperties;
 import com.qianli.ilink.cloud_platform.messagecenterudp.udp.handler.ApUserInfoMessageHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;

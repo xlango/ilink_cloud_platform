@@ -1,6 +1,6 @@
 package com.qianli.ilink.cloud_platform.messagecenterudp.mq.kafka;
 
-import com.qianli.ilink.cloud_platform.spring.properties.KafkaProducerProperties;
+import com.qianli.ilink.cloud_platform.messagecenter.spring.properties.KafkaProducerProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;

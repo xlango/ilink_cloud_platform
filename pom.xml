@@ -14,9 +14,6 @@
 		<module>commons</module>
 		<module>messagecenter</module>
 		<module>messagecenter-udp</module>
-		<module>eureka-server</module>
-		<module>gateway</module>
-        <module>oauth2-server</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

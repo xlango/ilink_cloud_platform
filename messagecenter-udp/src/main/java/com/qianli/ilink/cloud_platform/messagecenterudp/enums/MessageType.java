@@ -7,7 +7,8 @@ public enum MessageType implements Behaviour{
     AP_ONLINE_STA_INFO("AP_ONLINE_STA_INFO","aponlinestainfo"),
     AP_OFFLINE_STA_INFO("AP_OFFLINE_STA_INFO","apofflinestainfo"),
     USER_INTERNET_LOG("USER_INTERNET_LOG","userinternetlog"),
-    AP_USER_INFO("AP_USER_INFO","apuserinfo"),;
+    AP_USER_INFO("AP_USER_INFO","apuserinfo"),
+    PROBE_MESSAGE("PROBE_MESSAGE","probemessage"),;
 
     private String value;
     private String desc;

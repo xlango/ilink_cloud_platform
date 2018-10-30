@@ -11,7 +11,7 @@ public class testApp {
 
     @Test
     public void testHttp(){
-        for (int i = 0 ;i<1000;i++){
+        for (int i = 0 ;i<1;i++){
             ApBaseInfoProto.ApBaseInfo apBaseInfo = ApBaseInfoProto.ApBaseInfo.newBuilder().setStatus(1).setApMac("apMac").setApModel("apModel").setApWanip("apWainIp").build();
             OkHttpClient client = OkHttpCliGen.OKHTTP.getClient();
             MediaType protobuf = MediaType.parse("application/x-protobuf");//数据类型为json格式
@@ -19,7 +19,7 @@ public class testApp {
             Request request = new Request.Builder()
                     .addHeader("Content-Type", "application/x-protobuf")
                     .addHeader("accept", "application/x-protobuf")
-                    .url("http://localhost:9000/apbaseinfo")
+                    .url("http://localhost:18888/apbaseinfo")
                     .post(requestBody)
                     .build();
             Call call = client.newCall(request);
