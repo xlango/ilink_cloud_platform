@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qianli.ilink.cloud_platform.messagecenter.mapper.BaseInfoMapper">
+    <resultMap id="BaseResultMap" type="com.qianli.ilink.cloud_platform.messagecenter.pojo.BaseInfo">
+        <id column="MAC" property="MAC" jdbcType="VARCHAR"/>
+        <result column="accessToken" property="accessToken" jdbcType="VARCHAR"/>
+        <result column="configVersion" property="configVersion" jdbcType="VARCHAR"/>
+        <result column="SN" property="SN" jdbcType="VARCHAR"/>
+        <result column="model" property="model" jdbcType="VARCHAR"/>
+        <result column="hwVersion" property="hwVersion" jdbcType="VARCHAR"/>
+        <result column="masterImageVersion" property="masterImageVersion" jdbcType="VARCHAR"/>
+        <result column="backupImageVersion" property="backupImageVersion" jdbcType="VARCHAR"/>
+        <result column="masterUbootVersion" property="masterUbootVersion" jdbcType="VARCHAR"/>
+        <result column="backupUbootVersion" property="backupUbootVersion" jdbcType="VARCHAR"/>
+        <result column="n2nStatus" property="n2nStatus" jdbcType="VARCHAR"/>
+        <result column="upTime" property="upTime" jdbcType="VARCHAR"/>
+        <result column="gwStatus" property="gwStatus" jdbcType="VARCHAR"/>
+        <result column="rebootCause" property="rebootCause" jdbcType="VARCHAR"/>
+        <result column="childDeviceNum" property="childDeviceNum" jdbcType="VARCHAR"/>
+        <result column="internetIp" property="internetIp" jdbcType="VARCHAR"/>
+
+    </resultMap>
+    <sql id="Base_Column_List">
+        MAC,accessToken,configVersion,SN,model,hwVersion,masterImageVersion,backupImageVersion,masterUbootVersion
+        ,backupUbootVersion,n2nStatus,upTime,gwStatus,rebootCause,childDeviceNum,internetIp
+    </sql>
+
+    <insert id="insert" parameterType="com.qianli.ilink.cloud_platform.messagecenter.pojo.BaseInfo">
+        insert into baseinfo (MAC,accessToken,configVersion,SN,model,hwVersion,masterImageVersion,backupImageVersion,masterUbootVersion
+            ,backupUbootVersion,n2nStatus,upTime,gwStatus,rebootCause,childDeviceNum,internetIp)
+        values (#{MAC}, #{accessToken}, #{configVersion}, #{SN}, #{model}, #{hwVersion}, #{masterImageVersion}, #{backupImageVersion}
+            , #{masterUbootVersion}, #{backupUbootVersion}, #{n2nStatus}, #{upTime}, #{gwStatus}, #{rebootCause}, #{childDeviceNum}, #{internetIp})
+    </insert>
+
+
+    <update id="updateByMac" parameterType="com.qianli.ilink.cloud_platform.messagecenter.pojo.BaseInfo">
+        update baseinfo
+        <set>
+            <if test="accessToken != null">
+                accessToken = #{accessToken},
+            </if>
+            <if test="configVersion != null">
+                configVersion = #{configVersion},
+            </if>
+            <if test="SN != null">
+                SN = #{SN},
+            </if>
+            <if test="model != null">
+                model = #{model},
+            </if>
+            <if test="hwVersion != null">
+                hwVersion = #{hwVersion},
+            </if>
+            <if test="masterImageVersion != null">
+                masterImageVersion = #{masterImageVersion},
+            </if>
+            <if test="backupImageVersion != null">
+                backupImageVersion = #{backupImageVersion},
+            </if>
+            <if test="masterUbootVersion != null">
+                masterUbootVersion = #{masterUbootVersion},
+            </if>
+            <if test="backupUbootVersion != null">
+                backupUbootVersion = #{backupUbootVersion},
+            </if>
+            <if test="n2nStatus != null">
+                n2nStatus = #{n2nStatus},
+            </if>
+            <if test="upTime != null">
+                upTime = #{upTime},
+            </if>
+            <if test="gwStatus != null">
+                gwStatus = #{gwStatus},
+            </if>
+            <if test="rebootCause != null">
+                rebootCause = #{rebootCause},
+            </if>
+            <if test="childDeviceNum != null">
+                childDeviceNum = #{childDeviceNum},
+            </if>
+            <if test="internetIp != null">
+                internetIp = #{internetIp},
+            </if>
+        </set>
+        where MAC = #{MAC}
+    </update>
+
+    <!--存在即更新，不存在即插入-->
+    <insert id="insertOrUpdate" parameterType="com.qianli.ilink.cloud_platform.messagecenter.pojo.BaseInfo">
+        insert into baseinfo (MAC,accessToken,configVersion,SN,model,hwVersion,masterImageVersion,backupImageVersion,masterUbootVersion
+            ,backupUbootVersion,n2nStatus,upTime,gwStatus,rebootCause,childDeviceNum,internetIp)
+        values (#{MAC}, #{accessToken}, #{configVersion}, #{SN}, #{model}, #{hwVersion}, #{masterImageVersion}, #{backupImageVersion}
+            , #{masterUbootVersion}, #{backupUbootVersion}, #{n2nStatus}, #{upTime}, #{gwStatus}, #{rebootCause}, #{childDeviceNum}, #{internetIp})
+        ON DUPLICATE KEY UPDATE MAC=#{MAC},accessToken=#{accessToken},configVersion=#{configVersion},SN=#{SN},model=#{model},hwVersion=#{hwVersion}
+            ,masterImageVersion=#{masterImageVersion},backupImageVersion=#{backupImageVersion},masterUbootVersion=#{masterUbootVersion}
+            ,backupUbootVersion=#{backupUbootVersion},n2nStatus=#{n2nStatus},upTime=#{upTime},gwStatus=#{gwStatus},rebootCause=#{rebootCause}
+            ,childDeviceNum=#{childDeviceNum},internetIp=#{internetIp}
+    </insert>
+
+
+    <!--<update id="updateStatus">-->
+        <!--<foreach collection="list" item="item" index="index" separator=";">-->
+            <!--UPDATE user t-->
+            <!--<set>-->
+                <!--t.name = #{item.name},-->
+                <!--t.age = #{item.age}-->
+            <!--</set>-->
+            <!--WHERE t.id = #{item.id}-->
+        <!--</foreach>-->
+    <!--</update>-->
+
+</mapper>

@@ -173,14 +173,14 @@ public final class ProbeMessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
     }
 
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProbeMessageProto.internal_static_ProbePhoneInfo_fieldAccessorTable
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbePhoneInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProbePhoneInfo.class, Builder.class);
+              com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder.class);
     }
 
     public static final int PROBE_AP_MAC_FIELD_NUMBER = 1;
@@ -397,10 +397,10 @@ public final class ProbeMessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ProbePhoneInfo)) {
+      if (!(obj instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo)) {
         return super.equals(obj);
       }
-      ProbePhoneInfo other = (ProbePhoneInfo) obj;
+      com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo other = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo) obj;
 
       boolean result = true;
       result = result && getProbeApMac()
@@ -447,69 +447,69 @@ public final class ProbeMessageProto {
       return hash;
     }
 
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbePhoneInfo parseFrom(byte[] data)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbePhoneInfo parseFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbePhoneInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ProbePhoneInfo parseDelimitedFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbePhoneInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -521,7 +521,7 @@ public final class ProbeMessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ProbePhoneInfo prototype) {
+    public static Builder newBuilder(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -541,17 +541,17 @@ public final class ProbeMessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ProbePhoneInfo)
-        ProbePhoneInfoOrBuilder {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
       }
 
       protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProbeMessageProto.internal_static_ProbePhoneInfo_fieldAccessorTable
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbePhoneInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ProbePhoneInfo.class, Builder.class);
+                com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder.class);
       }
 
       // Construct using com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.newBuilder()
@@ -590,23 +590,23 @@ public final class ProbeMessageProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbePhoneInfo_descriptor;
       }
 
-      public ProbePhoneInfo getDefaultInstanceForType() {
-        return ProbePhoneInfo.getDefaultInstance();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getDefaultInstanceForType() {
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.getDefaultInstance();
       }
 
-      public ProbePhoneInfo build() {
-        ProbePhoneInfo result = buildPartial();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo build() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public ProbePhoneInfo buildPartial() {
-        ProbePhoneInfo result = new ProbePhoneInfo(this);
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo buildPartial() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo result = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo(this);
         result.probeApMac_ = probeApMac_;
         result.phoneMac_ = phoneMac_;
         result.staRssi_ = staRssi_;
@@ -645,16 +645,16 @@ public final class ProbeMessageProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ProbePhoneInfo) {
-          return mergeFrom((ProbePhoneInfo)other);
+        if (other instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo) {
+          return mergeFrom((com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ProbePhoneInfo other) {
-        if (other == ProbePhoneInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo other) {
+        if (other == com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.getDefaultInstance()) return this;
         if (!other.getProbeApMac().isEmpty()) {
           probeApMac_ = other.probeApMac_;
           onChanged();
@@ -692,11 +692,11 @@ public final class ProbeMessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ProbePhoneInfo parsedMessage = null;
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ProbePhoneInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1031,12 +1031,12 @@ public final class ProbeMessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:ProbePhoneInfo)
-    private static final ProbePhoneInfo DEFAULT_INSTANCE;
+    private static final com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ProbePhoneInfo();
+      DEFAULT_INSTANCE = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo();
     }
 
-    public static ProbePhoneInfo getDefaultInstance() {
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1059,7 +1059,7 @@ public final class ProbeMessageProto {
       return PARSER;
     }
 
-    public ProbePhoneInfo getDefaultInstanceForType() {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1120,6 +1120,10 @@ public final class ProbeMessageProto {
     int getTimestamp();
   }
   /**
+   * <pre>
+   *18880
+   * </pre>
+   *
    * Protobuf type {@code ProbeHotspotInfo}
    */
   public  static final class ProbeHotspotInfo extends
@@ -1224,14 +1228,14 @@ public final class ProbeMessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
     }
 
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProbeMessageProto.internal_static_ProbeHotspotInfo_fieldAccessorTable
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeHotspotInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProbeHotspotInfo.class, Builder.class);
+              com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder.class);
     }
 
     public static final int PROBE_AP_MAC_FIELD_NUMBER = 1;
@@ -1448,10 +1452,10 @@ public final class ProbeMessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ProbeHotspotInfo)) {
+      if (!(obj instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo)) {
         return super.equals(obj);
       }
-      ProbeHotspotInfo other = (ProbeHotspotInfo) obj;
+      com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo other = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo) obj;
 
       boolean result = true;
       result = result && getProbeApMac()
@@ -1498,69 +1502,69 @@ public final class ProbeMessageProto {
       return hash;
     }
 
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeHotspotInfo parseFrom(byte[] data)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeHotspotInfo parseFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbeHotspotInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ProbeHotspotInfo parseDelimitedFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbeHotspotInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1572,7 +1576,7 @@ public final class ProbeMessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ProbeHotspotInfo prototype) {
+    public static Builder newBuilder(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1587,22 +1591,26 @@ public final class ProbeMessageProto {
       return builder;
     }
     /**
+     * <pre>
+     *18880
+     * </pre>
+     *
      * Protobuf type {@code ProbeHotspotInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ProbeHotspotInfo)
-        ProbeHotspotInfoOrBuilder {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
       }
 
       protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProbeMessageProto.internal_static_ProbeHotspotInfo_fieldAccessorTable
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeHotspotInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ProbeHotspotInfo.class, Builder.class);
+                com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder.class);
       }
 
       // Construct using com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.newBuilder()
@@ -1641,23 +1649,23 @@ public final class ProbeMessageProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeHotspotInfo_descriptor;
       }
 
-      public ProbeHotspotInfo getDefaultInstanceForType() {
-        return ProbeHotspotInfo.getDefaultInstance();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getDefaultInstanceForType() {
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.getDefaultInstance();
       }
 
-      public ProbeHotspotInfo build() {
-        ProbeHotspotInfo result = buildPartial();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo build() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public ProbeHotspotInfo buildPartial() {
-        ProbeHotspotInfo result = new ProbeHotspotInfo(this);
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo buildPartial() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo result = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo(this);
         result.probeApMac_ = probeApMac_;
         result.hotspotMac_ = hotspotMac_;
         result.hotspotEssid_ = hotspotEssid_;
@@ -1696,16 +1704,16 @@ public final class ProbeMessageProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ProbeHotspotInfo) {
-          return mergeFrom((ProbeHotspotInfo)other);
+        if (other instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo) {
+          return mergeFrom((com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ProbeHotspotInfo other) {
-        if (other == ProbeHotspotInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo other) {
+        if (other == com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.getDefaultInstance()) return this;
         if (!other.getProbeApMac().isEmpty()) {
           probeApMac_ = other.probeApMac_;
           onChanged();
@@ -1743,11 +1751,11 @@ public final class ProbeMessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ProbeHotspotInfo parsedMessage = null;
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ProbeHotspotInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2082,12 +2090,12 @@ public final class ProbeMessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:ProbeHotspotInfo)
-    private static final ProbeHotspotInfo DEFAULT_INSTANCE;
+    private static final com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ProbeHotspotInfo();
+      DEFAULT_INSTANCE = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo();
     }
 
-    public static ProbeHotspotInfo getDefaultInstance() {
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2110,7 +2118,7 @@ public final class ProbeMessageProto {
       return PARSER;
     }
 
-    public ProbeHotspotInfo getDefaultInstanceForType() {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2166,6 +2174,10 @@ public final class ProbeMessageProto {
     int getWorkMode();
   }
   /**
+   * <pre>
+   *18882
+   * </pre>
+   *
    * Protobuf type {@code ProbeAPLocationInfo}
    */
   public  static final class ProbeAPLocationInfo extends
@@ -2269,14 +2281,14 @@ public final class ProbeMessageProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
     }
 
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProbeMessageProto.internal_static_ProbeAPLocationInfo_fieldAccessorTable
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeAPLocationInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              ProbeAPLocationInfo.class, Builder.class);
+              com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder.class);
     }
 
     public static final int PROBE_AP_MAC_FIELD_NUMBER = 1;
@@ -2469,10 +2481,10 @@ public final class ProbeMessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof ProbeAPLocationInfo)) {
+      if (!(obj instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo)) {
         return super.equals(obj);
       }
-      ProbeAPLocationInfo other = (ProbeAPLocationInfo) obj;
+      com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo other = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo) obj;
 
       boolean result = true;
       result = result && getProbeApMac()
@@ -2525,69 +2537,69 @@ public final class ProbeMessageProto {
       return hash;
     }
 
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeAPLocationInfo parseFrom(byte[] data)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static ProbeAPLocationInfo parseFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbeAPLocationInfo parseDelimitedFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static ProbeAPLocationInfo parseDelimitedFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static ProbeAPLocationInfo parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2599,7 +2611,7 @@ public final class ProbeMessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(ProbeAPLocationInfo prototype) {
+    public static Builder newBuilder(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -2614,22 +2626,26 @@ public final class ProbeMessageProto {
       return builder;
     }
     /**
+     * <pre>
+     *18882
+     * </pre>
+     *
      * Protobuf type {@code ProbeAPLocationInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:ProbeAPLocationInfo)
-        ProbeAPLocationInfoOrBuilder {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
       }
 
       protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProbeMessageProto.internal_static_ProbeAPLocationInfo_fieldAccessorTable
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeAPLocationInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                ProbeAPLocationInfo.class, Builder.class);
+                com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder.class);
       }
 
       // Construct using com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.newBuilder()
@@ -2668,23 +2684,23 @@ public final class ProbeMessageProto {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_ProbeAPLocationInfo_descriptor;
       }
 
-      public ProbeAPLocationInfo getDefaultInstanceForType() {
-        return ProbeAPLocationInfo.getDefaultInstance();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getDefaultInstanceForType() {
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.getDefaultInstance();
       }
 
-      public ProbeAPLocationInfo build() {
-        ProbeAPLocationInfo result = buildPartial();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo build() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public ProbeAPLocationInfo buildPartial() {
-        ProbeAPLocationInfo result = new ProbeAPLocationInfo(this);
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo buildPartial() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo result = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo(this);
         result.probeApMac_ = probeApMac_;
         result.gpsLongi_ = gpsLongi_;
         result.gpsLati_ = gpsLati_;
@@ -2723,16 +2739,16 @@ public final class ProbeMessageProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof ProbeAPLocationInfo) {
-          return mergeFrom((ProbeAPLocationInfo)other);
+        if (other instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo) {
+          return mergeFrom((com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(ProbeAPLocationInfo other) {
-        if (other == ProbeAPLocationInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo other) {
+        if (other == com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.getDefaultInstance()) return this;
         if (!other.getProbeApMac().isEmpty()) {
           probeApMac_ = other.probeApMac_;
           onChanged();
@@ -2769,11 +2785,11 @@ public final class ProbeMessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        ProbeAPLocationInfo parsedMessage = null;
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (ProbeAPLocationInfo) e.getUnfinishedMessage();
+          parsedMessage = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3065,12 +3081,12 @@ public final class ProbeMessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:ProbeAPLocationInfo)
-    private static final ProbeAPLocationInfo DEFAULT_INSTANCE;
+    private static final com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new ProbeAPLocationInfo();
+      DEFAULT_INSTANCE = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo();
     }
 
-    public static ProbeAPLocationInfo getDefaultInstance() {
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3093,7 +3109,7 @@ public final class ProbeMessageProto {
       return PARSER;
     }
 
-    public ProbeAPLocationInfo getDefaultInstanceForType() {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3121,7 +3137,7 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
      */
-    ProbePhoneInfo getProbePhoneInfo(int index);
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getProbePhoneInfo(int index);
     /**
      * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
      */
@@ -3134,7 +3150,7 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
      */
-    ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
             int index);
 
     /**
@@ -3145,7 +3161,7 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
      */
-    ProbeHotspotInfo getProbeHotsportInfo(int index);
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getProbeHotsportInfo(int index);
     /**
      * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
      */
@@ -3158,7 +3174,7 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
      */
-    ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
             int index);
 
     /**
@@ -3166,25 +3182,44 @@ public final class ProbeMessageProto {
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    boolean hasProbeAPLocationInfo();
+    java.util.List<ProbeAPLocationInfo>
+        getProbeAPLocationInfoList();
     /**
      * <pre>
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    ProbeAPLocationInfo getProbeAPLocationInfo();
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getProbeAPLocationInfo(int index);
     /**
      * <pre>
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder();
+    int getProbeAPLocationInfoCount();
+    /**
+     * <pre>
+     *???这里定义错了吧？
+     * </pre>
+     *
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     */
+    java.util.List<? extends ProbeAPLocationInfoOrBuilder>
+        getProbeAPLocationInfoOrBuilderList();
+    /**
+     * <pre>
+     *???这里定义错了吧？
+     * </pre>
+     *
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     */
+    com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder(
+            int index);
   }
   /**
    * Protobuf type {@code Probe_Message}
@@ -3202,6 +3237,7 @@ public final class ProbeMessageProto {
       probeApMac_ = "";
       probePhoneInfo_ = java.util.Collections.emptyList();
       probeHotsportInfo_ = java.util.Collections.emptyList();
+      probeAPLocationInfo_ = java.util.Collections.emptyList();
     }
 
     @Override
@@ -3247,7 +3283,7 @@ public final class ProbeMessageProto {
                 mutable_bitField0_ |= 0x00000002;
               }
               probePhoneInfo_.add(
-                  input.readMessage(ProbePhoneInfo.parser(), extensionRegistry));
+                  input.readMessage(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.parser(), extensionRegistry));
               break;
             }
             case 26: {
@@ -3256,20 +3292,16 @@ public final class ProbeMessageProto {
                 mutable_bitField0_ |= 0x00000004;
               }
               probeHotsportInfo_.add(
-                  input.readMessage(ProbeHotspotInfo.parser(), extensionRegistry));
+                  input.readMessage(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.parser(), extensionRegistry));
               break;
             }
             case 34: {
-              ProbeAPLocationInfo.Builder subBuilder = null;
-              if (probeAPLocationInfo_ != null) {
-                subBuilder = probeAPLocationInfo_.toBuilder();
+              if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+                probeAPLocationInfo_ = new java.util.ArrayList<ProbeAPLocationInfo>();
+                mutable_bitField0_ |= 0x00000008;
               }
-              probeAPLocationInfo_ = input.readMessage(ProbeAPLocationInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(probeAPLocationInfo_);
-                probeAPLocationInfo_ = subBuilder.buildPartial();
-              }
-
+              probeAPLocationInfo_.add(
+                  input.readMessage(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.parser(), extensionRegistry));
               break;
             }
           }
@@ -3286,20 +3318,23 @@ public final class ProbeMessageProto {
         if (((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
           probeHotsportInfo_ = java.util.Collections.unmodifiableList(probeHotsportInfo_);
         }
+        if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
+          probeAPLocationInfo_ = java.util.Collections.unmodifiableList(probeAPLocationInfo_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return ProbeMessageProto.internal_static_Probe_Message_descriptor;
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_Probe_Message_descriptor;
     }
 
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return ProbeMessageProto.internal_static_Probe_Message_fieldAccessorTable
+      return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_Probe_Message_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Probe_Message.class, Builder.class);
+              com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.Builder.class);
     }
 
     private int bitField0_;
@@ -3361,13 +3396,13 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
      */
-    public ProbePhoneInfo getProbePhoneInfo(int index) {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getProbePhoneInfo(int index) {
       return probePhoneInfo_.get(index);
     }
     /**
      * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
      */
-    public ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
         int index) {
       return probePhoneInfo_.get(index);
     }
@@ -3396,48 +3431,70 @@ public final class ProbeMessageProto {
     /**
      * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
      */
-    public ProbeHotspotInfo getProbeHotsportInfo(int index) {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getProbeHotsportInfo(int index) {
       return probeHotsportInfo_.get(index);
     }
     /**
      * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
      */
-    public ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
         int index) {
       return probeHotsportInfo_.get(index);
     }
 
     public static final int PROBEAPLOCATIONINFO_FIELD_NUMBER = 4;
-    private ProbeAPLocationInfo probeAPLocationInfo_;
+    private java.util.List<ProbeAPLocationInfo> probeAPLocationInfo_;
     /**
      * <pre>
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    public boolean hasProbeAPLocationInfo() {
-      return probeAPLocationInfo_ != null;
+    public java.util.List<ProbeAPLocationInfo> getProbeAPLocationInfoList() {
+      return probeAPLocationInfo_;
     }
     /**
      * <pre>
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    public ProbeAPLocationInfo getProbeAPLocationInfo() {
-      return probeAPLocationInfo_ == null ? ProbeAPLocationInfo.getDefaultInstance() : probeAPLocationInfo_;
+    public java.util.List<? extends ProbeAPLocationInfoOrBuilder>
+        getProbeAPLocationInfoOrBuilderList() {
+      return probeAPLocationInfo_;
     }
     /**
      * <pre>
      *???这里定义错了吧？
      * </pre>
      *
-     * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
      */
-    public ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder() {
-      return getProbeAPLocationInfo();
+    public int getProbeAPLocationInfoCount() {
+      return probeAPLocationInfo_.size();
+    }
+    /**
+     * <pre>
+     *???这里定义错了吧？
+     * </pre>
+     *
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     */
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getProbeAPLocationInfo(int index) {
+      return probeAPLocationInfo_.get(index);
+    }
+    /**
+     * <pre>
+     *???这里定义错了吧？
+     * </pre>
+     *
+     * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+     */
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder(
+        int index) {
+      return probeAPLocationInfo_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3461,8 +3518,8 @@ public final class ProbeMessageProto {
       for (int i = 0; i < probeHotsportInfo_.size(); i++) {
         output.writeMessage(3, probeHotsportInfo_.get(i));
       }
-      if (probeAPLocationInfo_ != null) {
-        output.writeMessage(4, getProbeAPLocationInfo());
+      for (int i = 0; i < probeAPLocationInfo_.size(); i++) {
+        output.writeMessage(4, probeAPLocationInfo_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -3483,9 +3540,9 @@ public final class ProbeMessageProto {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, probeHotsportInfo_.get(i));
       }
-      if (probeAPLocationInfo_ != null) {
+      for (int i = 0; i < probeAPLocationInfo_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getProbeAPLocationInfo());
+          .computeMessageSize(4, probeAPLocationInfo_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3497,10 +3554,10 @@ public final class ProbeMessageProto {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Probe_Message)) {
+      if (!(obj instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message)) {
         return super.equals(obj);
       }
-      Probe_Message other = (Probe_Message) obj;
+      com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message other = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message) obj;
 
       boolean result = true;
       result = result && getProbeApMac()
@@ -3509,11 +3566,8 @@ public final class ProbeMessageProto {
           .equals(other.getProbePhoneInfoList());
       result = result && getProbeHotsportInfoList()
           .equals(other.getProbeHotsportInfoList());
-      result = result && (hasProbeAPLocationInfo() == other.hasProbeAPLocationInfo());
-      if (hasProbeAPLocationInfo()) {
-        result = result && getProbeAPLocationInfo()
-            .equals(other.getProbeAPLocationInfo());
-      }
+      result = result && getProbeAPLocationInfoList()
+          .equals(other.getProbeAPLocationInfoList());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -3535,78 +3589,78 @@ public final class ProbeMessageProto {
         hash = (37 * hash) + PROBE_HOTSPORT_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getProbeHotsportInfoList().hashCode();
       }
-      if (hasProbeAPLocationInfo()) {
+      if (getProbeAPLocationInfoCount() > 0) {
         hash = (37 * hash) + PROBEAPLOCATIONINFO_FIELD_NUMBER;
-        hash = (53 * hash) + getProbeAPLocationInfo().hashCode();
+        hash = (53 * hash) + getProbeAPLocationInfoList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Probe_Message parseFrom(byte[] data)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Probe_Message parseFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Probe_Message parseDelimitedFrom(java.io.InputStream input)
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Probe_Message parseDelimitedFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Probe_Message parseFrom(
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3618,7 +3672,7 @@ public final class ProbeMessageProto {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Probe_Message prototype) {
+    public static Builder newBuilder(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -3638,17 +3692,17 @@ public final class ProbeMessageProto {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Probe_Message)
-        Probe_MessageOrBuilder {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_MessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return ProbeMessageProto.internal_static_Probe_Message_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_Probe_Message_descriptor;
       }
 
       protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return ProbeMessageProto.internal_static_Probe_Message_fieldAccessorTable
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_Probe_Message_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Probe_Message.class, Builder.class);
+                com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.class, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.Builder.class);
       }
 
       // Construct using com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.newBuilder()
@@ -3666,6 +3720,7 @@ public final class ProbeMessageProto {
                 .alwaysUseFieldBuilders) {
           getProbePhoneInfoFieldBuilder();
           getProbeHotsportInfoFieldBuilder();
+          getProbeAPLocationInfoFieldBuilder();
         }
       }
       public Builder clear() {
@@ -3685,33 +3740,33 @@ public final class ProbeMessageProto {
           probeHotsportInfoBuilder_.clear();
         }
         if (probeAPLocationInfoBuilder_ == null) {
-          probeAPLocationInfo_ = null;
+          probeAPLocationInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
         } else {
-          probeAPLocationInfo_ = null;
-          probeAPLocationInfoBuilder_ = null;
+          probeAPLocationInfoBuilder_.clear();
         }
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return ProbeMessageProto.internal_static_Probe_Message_descriptor;
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.internal_static_Probe_Message_descriptor;
       }
 
-      public Probe_Message getDefaultInstanceForType() {
-        return Probe_Message.getDefaultInstance();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message getDefaultInstanceForType() {
+        return com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.getDefaultInstance();
       }
 
-      public Probe_Message build() {
-        Probe_Message result = buildPartial();
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message build() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public Probe_Message buildPartial() {
-        Probe_Message result = new Probe_Message(this);
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message buildPartial() {
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message result = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         result.probeApMac_ = probeApMac_;
@@ -3734,6 +3789,10 @@ public final class ProbeMessageProto {
           result.probeHotsportInfo_ = probeHotsportInfoBuilder_.build();
         }
         if (probeAPLocationInfoBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008)) {
+            probeAPLocationInfo_ = java.util.Collections.unmodifiableList(probeAPLocationInfo_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
           result.probeAPLocationInfo_ = probeAPLocationInfo_;
         } else {
           result.probeAPLocationInfo_ = probeAPLocationInfoBuilder_.build();
@@ -3770,16 +3829,16 @@ public final class ProbeMessageProto {
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Probe_Message) {
-          return mergeFrom((Probe_Message)other);
+        if (other instanceof com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message) {
+          return mergeFrom((com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Probe_Message other) {
-        if (other == Probe_Message.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message other) {
+        if (other == com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message.getDefaultInstance()) return this;
         if (!other.getProbeApMac().isEmpty()) {
           probeApMac_ = other.probeApMac_;
           onChanged();
@@ -3836,8 +3895,31 @@ public final class ProbeMessageProto {
             }
           }
         }
-        if (other.hasProbeAPLocationInfo()) {
-          mergeProbeAPLocationInfo(other.getProbeAPLocationInfo());
+        if (probeAPLocationInfoBuilder_ == null) {
+          if (!other.probeAPLocationInfo_.isEmpty()) {
+            if (probeAPLocationInfo_.isEmpty()) {
+              probeAPLocationInfo_ = other.probeAPLocationInfo_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureProbeAPLocationInfoIsMutable();
+              probeAPLocationInfo_.addAll(other.probeAPLocationInfo_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.probeAPLocationInfo_.isEmpty()) {
+            if (probeAPLocationInfoBuilder_.isEmpty()) {
+              probeAPLocationInfoBuilder_.dispose();
+              probeAPLocationInfoBuilder_ = null;
+              probeAPLocationInfo_ = other.probeAPLocationInfo_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              probeAPLocationInfoBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getProbeAPLocationInfoFieldBuilder() : null;
+            } else {
+              probeAPLocationInfoBuilder_.addAllMessages(other.probeAPLocationInfo_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3852,11 +3934,11 @@ public final class ProbeMessageProto {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Probe_Message parsedMessage = null;
+        com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Probe_Message) e.getUnfinishedMessage();
+          parsedMessage = (com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3971,7 +4053,7 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public ProbePhoneInfo getProbePhoneInfo(int index) {
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo getProbePhoneInfo(int index) {
         if (probePhoneInfoBuilder_ == null) {
           return probePhoneInfo_.get(index);
         } else {
@@ -3982,7 +4064,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
       public Builder setProbePhoneInfo(
-          int index, ProbePhoneInfo value) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo value) {
         if (probePhoneInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3999,7 +4081,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
       public Builder setProbePhoneInfo(
-          int index, ProbePhoneInfo.Builder builderForValue) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder builderForValue) {
         if (probePhoneInfoBuilder_ == null) {
           ensureProbePhoneInfoIsMutable();
           probePhoneInfo_.set(index, builderForValue.build());
@@ -4012,7 +4094,7 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public Builder addProbePhoneInfo(ProbePhoneInfo value) {
+      public Builder addProbePhoneInfo(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo value) {
         if (probePhoneInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4029,7 +4111,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
       public Builder addProbePhoneInfo(
-          int index, ProbePhoneInfo value) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo value) {
         if (probePhoneInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4046,7 +4128,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
       public Builder addProbePhoneInfo(
-          ProbePhoneInfo.Builder builderForValue) {
+          com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder builderForValue) {
         if (probePhoneInfoBuilder_ == null) {
           ensureProbePhoneInfoIsMutable();
           probePhoneInfo_.add(builderForValue.build());
@@ -4060,7 +4142,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
       public Builder addProbePhoneInfo(
-          int index, ProbePhoneInfo.Builder builderForValue) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder builderForValue) {
         if (probePhoneInfoBuilder_ == null) {
           ensureProbePhoneInfoIsMutable();
           probePhoneInfo_.add(index, builderForValue.build());
@@ -4114,14 +4196,14 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public ProbePhoneInfo.Builder getProbePhoneInfoBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder getProbePhoneInfoBuilder(
           int index) {
         return getProbePhoneInfoFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfoOrBuilder getProbePhoneInfoOrBuilder(
           int index) {
         if (probePhoneInfoBuilder_ == null) {
           return probePhoneInfo_.get(index);  } else {
@@ -4142,17 +4224,17 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public ProbePhoneInfo.Builder addProbePhoneInfoBuilder() {
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder addProbePhoneInfoBuilder() {
         return getProbePhoneInfoFieldBuilder().addBuilder(
-            ProbePhoneInfo.getDefaultInstance());
+            com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
        */
-      public ProbePhoneInfo.Builder addProbePhoneInfoBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.Builder addProbePhoneInfoBuilder(
           int index) {
         return getProbePhoneInfoFieldBuilder().addBuilder(
-            index, ProbePhoneInfo.getDefaultInstance());
+            index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbePhoneInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .ProbePhoneInfo probe_phone_info = 2;</code>
@@ -4211,7 +4293,7 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public ProbeHotspotInfo getProbeHotsportInfo(int index) {
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo getProbeHotsportInfo(int index) {
         if (probeHotsportInfoBuilder_ == null) {
           return probeHotsportInfo_.get(index);
         } else {
@@ -4222,7 +4304,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
       public Builder setProbeHotsportInfo(
-          int index, ProbeHotspotInfo value) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo value) {
         if (probeHotsportInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4239,7 +4321,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
       public Builder setProbeHotsportInfo(
-          int index, ProbeHotspotInfo.Builder builderForValue) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder builderForValue) {
         if (probeHotsportInfoBuilder_ == null) {
           ensureProbeHotsportInfoIsMutable();
           probeHotsportInfo_.set(index, builderForValue.build());
@@ -4252,7 +4334,7 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public Builder addProbeHotsportInfo(ProbeHotspotInfo value) {
+      public Builder addProbeHotsportInfo(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo value) {
         if (probeHotsportInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4269,7 +4351,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
       public Builder addProbeHotsportInfo(
-          int index, ProbeHotspotInfo value) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo value) {
         if (probeHotsportInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4286,7 +4368,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
       public Builder addProbeHotsportInfo(
-          ProbeHotspotInfo.Builder builderForValue) {
+          com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder builderForValue) {
         if (probeHotsportInfoBuilder_ == null) {
           ensureProbeHotsportInfoIsMutable();
           probeHotsportInfo_.add(builderForValue.build());
@@ -4300,7 +4382,7 @@ public final class ProbeMessageProto {
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
       public Builder addProbeHotsportInfo(
-          int index, ProbeHotspotInfo.Builder builderForValue) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder builderForValue) {
         if (probeHotsportInfoBuilder_ == null) {
           ensureProbeHotsportInfoIsMutable();
           probeHotsportInfo_.add(index, builderForValue.build());
@@ -4354,14 +4436,14 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public ProbeHotspotInfo.Builder getProbeHotsportInfoBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder getProbeHotsportInfoBuilder(
           int index) {
         return getProbeHotsportInfoFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfoOrBuilder getProbeHotsportInfoOrBuilder(
           int index) {
         if (probeHotsportInfoBuilder_ == null) {
           return probeHotsportInfo_.get(index);  } else {
@@ -4382,17 +4464,17 @@ public final class ProbeMessageProto {
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public ProbeHotspotInfo.Builder addProbeHotsportInfoBuilder() {
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder addProbeHotsportInfoBuilder() {
         return getProbeHotsportInfoFieldBuilder().addBuilder(
-            ProbeHotspotInfo.getDefaultInstance());
+            com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
        */
-      public ProbeHotspotInfo.Builder addProbeHotsportInfoBuilder(
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.Builder addProbeHotsportInfoBuilder(
           int index) {
         return getProbeHotsportInfoFieldBuilder().addBuilder(
-            index, ProbeHotspotInfo.getDefaultInstance());
+            index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeHotspotInfo.getDefaultInstance());
       }
       /**
        * <code>repeated .ProbeHotspotInfo probe_hotsport_info = 3;</code>
@@ -4416,31 +4498,30 @@ public final class ProbeMessageProto {
         return probeHotsportInfoBuilder_;
       }
 
-      private ProbeAPLocationInfo probeAPLocationInfo_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          ProbeAPLocationInfo, ProbeAPLocationInfo.Builder, ProbeAPLocationInfoOrBuilder> probeAPLocationInfoBuilder_;
-      /**
-       * <pre>
-       *???这里定义错了吧？
-       * </pre>
-       *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
-       */
-      public boolean hasProbeAPLocationInfo() {
-        return probeAPLocationInfoBuilder_ != null || probeAPLocationInfo_ != null;
+      private java.util.List<ProbeAPLocationInfo> probeAPLocationInfo_ =
+        java.util.Collections.emptyList();
+      private void ensureProbeAPLocationInfoIsMutable() {
+        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
+          probeAPLocationInfo_ = new java.util.ArrayList<ProbeAPLocationInfo>(probeAPLocationInfo_);
+          bitField0_ |= 0x00000008;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          ProbeAPLocationInfo, ProbeAPLocationInfo.Builder, ProbeAPLocationInfoOrBuilder> probeAPLocationInfoBuilder_;
+
       /**
        * <pre>
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      public ProbeAPLocationInfo getProbeAPLocationInfo() {
+      public java.util.List<ProbeAPLocationInfo> getProbeAPLocationInfoList() {
         if (probeAPLocationInfoBuilder_ == null) {
-          return probeAPLocationInfo_ == null ? ProbeAPLocationInfo.getDefaultInstance() : probeAPLocationInfo_;
+          return java.util.Collections.unmodifiableList(probeAPLocationInfo_);
         } else {
-          return probeAPLocationInfoBuilder_.getMessage();
+          return probeAPLocationInfoBuilder_.getMessageList();
         }
       }
       /**
@@ -4448,19 +4529,48 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      public Builder setProbeAPLocationInfo(ProbeAPLocationInfo value) {
+      public int getProbeAPLocationInfoCount() {
+        if (probeAPLocationInfoBuilder_ == null) {
+          return probeAPLocationInfo_.size();
+        } else {
+          return probeAPLocationInfoBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo getProbeAPLocationInfo(int index) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          return probeAPLocationInfo_.get(index);
+        } else {
+          return probeAPLocationInfoBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public Builder setProbeAPLocationInfo(
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo value) {
         if (probeAPLocationInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          probeAPLocationInfo_ = value;
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.set(index, value);
           onChanged();
         } else {
-          probeAPLocationInfoBuilder_.setMessage(value);
+          probeAPLocationInfoBuilder_.setMessage(index, value);
         }
-
         return this;
       }
       /**
@@ -4468,17 +4578,17 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
       public Builder setProbeAPLocationInfo(
-          ProbeAPLocationInfo.Builder builderForValue) {
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder builderForValue) {
         if (probeAPLocationInfoBuilder_ == null) {
-          probeAPLocationInfo_ = builderForValue.build();
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.set(index, builderForValue.build());
           onChanged();
         } else {
-          probeAPLocationInfoBuilder_.setMessage(builderForValue.build());
+          probeAPLocationInfoBuilder_.setMessage(index, builderForValue.build());
         }
-
         return this;
       }
       /**
@@ -4486,21 +4596,19 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      public Builder mergeProbeAPLocationInfo(ProbeAPLocationInfo value) {
+      public Builder addProbeAPLocationInfo(com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo value) {
         if (probeAPLocationInfoBuilder_ == null) {
-          if (probeAPLocationInfo_ != null) {
-            probeAPLocationInfo_ =
-              ProbeAPLocationInfo.newBuilder(probeAPLocationInfo_).mergeFrom(value).buildPartial();
-          } else {
-            probeAPLocationInfo_ = value;
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.add(value);
           onChanged();
         } else {
-          probeAPLocationInfoBuilder_.mergeFrom(value);
+          probeAPLocationInfoBuilder_.addMessage(value);
         }
-
         return this;
       }
       /**
@@ -4508,17 +4616,92 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public Builder addProbeAPLocationInfo(
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo value) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.add(index, value);
+          onChanged();
+        } else {
+          probeAPLocationInfoBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public Builder addProbeAPLocationInfo(
+          com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder builderForValue) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.add(builderForValue.build());
+          onChanged();
+        } else {
+          probeAPLocationInfoBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public Builder addProbeAPLocationInfo(
+          int index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder builderForValue) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          probeAPLocationInfoBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public Builder addAllProbeAPLocationInfo(
+          Iterable<? extends ProbeAPLocationInfo> values) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          ensureProbeAPLocationInfoIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, probeAPLocationInfo_);
+          onChanged();
+        } else {
+          probeAPLocationInfoBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
       public Builder clearProbeAPLocationInfo() {
         if (probeAPLocationInfoBuilder_ == null) {
-          probeAPLocationInfo_ = null;
+          probeAPLocationInfo_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
           onChanged();
         } else {
-          probeAPLocationInfo_ = null;
-          probeAPLocationInfoBuilder_ = null;
+          probeAPLocationInfoBuilder_.clear();
         }
-
         return this;
       }
       /**
@@ -4526,26 +4709,41 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      public ProbeAPLocationInfo.Builder getProbeAPLocationInfoBuilder() {
-        
-        onChanged();
-        return getProbeAPLocationInfoFieldBuilder().getBuilder();
+      public Builder removeProbeAPLocationInfo(int index) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          ensureProbeAPLocationInfoIsMutable();
+          probeAPLocationInfo_.remove(index);
+          onChanged();
+        } else {
+          probeAPLocationInfoBuilder_.remove(index);
+        }
+        return this;
       }
       /**
        * <pre>
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      public ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder() {
-        if (probeAPLocationInfoBuilder_ != null) {
-          return probeAPLocationInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return probeAPLocationInfo_ == null ?
-              ProbeAPLocationInfo.getDefaultInstance() : probeAPLocationInfo_;
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder getProbeAPLocationInfoBuilder(
+          int index) {
+        return getProbeAPLocationInfoFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfoOrBuilder getProbeAPLocationInfoOrBuilder(
+          int index) {
+        if (probeAPLocationInfoBuilder_ == null) {
+          return probeAPLocationInfo_.get(index);  } else {
+          return probeAPLocationInfoBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
@@ -4553,15 +4751,58 @@ public final class ProbeMessageProto {
        *???这里定义错了吧？
        * </pre>
        *
-       * <code>.ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
+      public java.util.List<? extends ProbeAPLocationInfoOrBuilder>
+           getProbeAPLocationInfoOrBuilderList() {
+        if (probeAPLocationInfoBuilder_ != null) {
+          return probeAPLocationInfoBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(probeAPLocationInfo_);
+        }
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder addProbeAPLocationInfoBuilder() {
+        return getProbeAPLocationInfoFieldBuilder().addBuilder(
+            com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.Builder addProbeAPLocationInfoBuilder(
+          int index) {
+        return getProbeAPLocationInfoFieldBuilder().addBuilder(
+            index, com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.ProbeAPLocationInfo.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       *???这里定义错了吧？
+       * </pre>
+       *
+       * <code>repeated .ProbeAPLocationInfo ProbeAPLocationInfo = 4;</code>
+       */
+      public java.util.List<ProbeAPLocationInfo.Builder>
+           getProbeAPLocationInfoBuilderList() {
+        return getProbeAPLocationInfoFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
           ProbeAPLocationInfo, ProbeAPLocationInfo.Builder, ProbeAPLocationInfoOrBuilder>
           getProbeAPLocationInfoFieldBuilder() {
         if (probeAPLocationInfoBuilder_ == null) {
-          probeAPLocationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+          probeAPLocationInfoBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               ProbeAPLocationInfo, ProbeAPLocationInfo.Builder, ProbeAPLocationInfoOrBuilder>(
-                  getProbeAPLocationInfo(),
+                  probeAPLocationInfo_,
+                  ((bitField0_ & 0x00000008) == 0x00000008),
                   getParentForChildren(),
                   isClean());
           probeAPLocationInfo_ = null;
@@ -4583,12 +4824,12 @@ public final class ProbeMessageProto {
     }
 
     // @@protoc_insertion_point(class_scope:Probe_Message)
-    private static final Probe_Message DEFAULT_INSTANCE;
+    private static final com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Probe_Message();
+      DEFAULT_INSTANCE = new com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message();
     }
 
-    public static Probe_Message getDefaultInstance() {
+    public static com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4611,7 +4852,7 @@ public final class ProbeMessageProto {
       return PARSER;
     }
 
-    public Probe_Message getDefaultInstanceForType() {
+    public com.qianli.ilink.cloud_platform.messagecenterudp.pojo.dto.ProbeMessageProto.Probe_Message getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4662,7 +4903,7 @@ public final class ProbeMessageProto {
       "obe_Message\022\024\n\014probe_ap_mac\030\001 \001(\t\022)\n\020pro" +
       "be_phone_info\030\002 \003(\0132\017.ProbePhoneInfo\022.\n\023" +
       "probe_hotsport_info\030\003 \003(\0132\021.ProbeHotspot" +
-      "Info\0221\n\023ProbeAPLocationInfo\030\004 \001(\0132\024.Prob" +
+      "Info\0221\n\023ProbeAPLocationInfo\030\004 \003(\0132\024.Prob" +
       "eAPLocationInfoBN\n9com.qianli.ilink.clou" +
       "d_platform.messagecenterudp.pojo.dtoB\021Pr" +
       "obeMessageProtob\006proto3"

@@ -16,7 +16,7 @@ message ProbePhoneInfo {
     int32  channel = 7;
 }
 
-message ProbeHotspotInfo {
+message ProbeHotspotInfo {//18880
     string  probe_ap_mac = 1;
     string  hotspot_mac = 2;
     string  hotspot_essid = 3;
@@ -26,7 +26,7 @@ message ProbeHotspotInfo {
     int32  timestamp = 7;
 }
 
-message ProbeAPLocationInfo{
+message ProbeAPLocationInfo{//18882
     string  probe_ap_mac = 1;
     float  gps_longi = 2;
     float  gps_lati = 3;
@@ -40,7 +40,7 @@ message Probe_Message {
     string  probe_ap_mac = 1;
     repeated  ProbePhoneInfo probe_phone_info = 2;
     repeated  ProbeHotspotInfo probe_hotsport_info = 3;
-    ProbeAPLocationInfo ProbeAPLocationInfo = 4;
+    repeated  ProbeAPLocationInfo ProbeAPLocationInfo = 4;
     //???这里定义错了吧？
 }
 

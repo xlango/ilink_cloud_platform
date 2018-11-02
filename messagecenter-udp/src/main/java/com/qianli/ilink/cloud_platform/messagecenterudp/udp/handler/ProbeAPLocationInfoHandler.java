@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @ChannelHandler.Sharable
 @Component
-public class ProbeMessageHandler extends SimpleChannelInboundHandler<DatagramPacket> {
+public class ProbeAPLocationInfoHandler extends SimpleChannelInboundHandler<DatagramPacket> {
 
     @Autowired
     private MessageSender messageSender;
@@ -26,7 +26,9 @@ public class ProbeMessageHandler extends SimpleChannelInboundHandler<DatagramPac
         if(content == null){
             return;
         }
-        messageSender.send(MessageType.PROBE_MESSAGE.getValue(),content);
+
+        //System.out.println("AP探针数据被抛出================");
+        messageSender.send(MessageType.PROBE_AP_LOCATION_INFO.getValue(),content);
     }
 
     @Override

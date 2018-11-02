@@ -3,10 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/messagecenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/messagecenter-udp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/oauth2-server" charset="UTF-8" />
+    <file url="file://D:/专业学习/成都千立科技工作/平台知识/cloud_platform-master/messagecenter" charset="UTF-8" />
   </component>
 </project>

@@ -7,7 +7,7 @@ async:
     queueCapacity: ${QUEUE_CAPACITY:500}
     keepAliveSeconds: ${KEEPALIVE_SECONDS:60}
 kafka:
-  messageTopic: ${MESSAGE_TOPIC:messageReceiver}
+  messageTopic: ${MESSAGE_TOPIC:test3}
   bootstrapServers: ${BOOTSTRAP_SERVERS:192.168.10.29:9092}
   batchSize: 16384
   lingerMs: 1000
@@ -15,4 +15,6 @@ udp:
   port:
     apUserInfoServerPort: ${AP_USERINFO_SERVER_PORT:12222}
     userInternetLogServerPort: ${USER_INTERNET_LOG_SERVER_PORT:13333}
-    probeMessageServerPort: ${PROBE_MESSAGE:18882}
+    probeHotspotInfo: ${PROBE_HOTSPOT_INFO:18880}
+    probeAPLocationInfo: ${PROBE_AP_Location_Info:18882}
+    testport: ${TEST_PORT:18873}  #该端口数据被抛出

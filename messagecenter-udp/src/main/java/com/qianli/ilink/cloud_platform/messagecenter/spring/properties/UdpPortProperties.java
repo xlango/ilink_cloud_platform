@@ -16,5 +16,7 @@ import org.springframework.stereotype.Component;
 public class UdpPortProperties {
     private int apUserInfoServerPort;
     private int userInternetLogServerPort;
-    private int probeMessageServerPort;
+    private int probeHotspotInfo;
+    private int probeAPLocationInfo;
+    private int testport;
 }

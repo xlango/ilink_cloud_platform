@@ -1,7 +1,7 @@
 package com.qianli.ilink.cloud_platform.messagecenterudp.udp;
 
-import com.qianli.ilink.cloud_platform.messagecenterudp.udp.handler.ProbeMessageHandler;
 import com.qianli.ilink.cloud_platform.messagecenter.spring.properties.UdpPortProperties;
+import com.qianli.ilink.cloud_platform.messagecenterudp.udp.handler.TestHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
@@ -17,13 +17,13 @@ import javax.annotation.PreDestroy;
 
 @Slf4j
 @Component
-public class ProbeMessageUdpServer {
+public class TestUdpServer {
 
     @Autowired
     private UdpPortProperties udpPortConfig;
 
     @Autowired
-    private ProbeMessageHandler probeMessageHandler;
+    private TestHandler testHandler;
 
     private ChannelFuture channelFuture;
 
@@ -32,18 +32,19 @@ public class ProbeMessageUdpServer {
 
     @PostConstruct
     public void initServer() {
-        log.info("init probeConfig udp server at port:{}",udpPortConfig.getProbeMessageServerPort());
+        log.info("init probeConfig udp server at port:{}",udpPortConfig.getTestport());
         try {
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.group(group)
                     .channel(NioDatagramChannel.class)
                     .option(ChannelOption.SO_BROADCAST, true)
 //                    .option(ChannelOption.RCVBUF_ALLOCATOR, new FixedRecvByteBufAllocator(65535))
-                    .handler(probeMessageHandler);
-            channelFuture = bootstrap.bind(udpPortConfig.getProbeMessageServerPort()).sync();
+                    .handler(testHandler)
+            ;
+            channelFuture = bootstrap.bind(udpPortConfig.getTestport()).sync();
             log.info("init probeConfig udp server success");
         } catch (InterruptedException e) {
-            log.error("ProbeMessageUdpServer InterruptedException,",e);
+            log.error("TestUdpServer InterruptedException,",e);
         } finally {
             Runtime.getRuntime().addShutdownHook(new Thread(this::shutdown));
         }
@@ -57,7 +58,7 @@ public class ProbeMessageUdpServer {
         if (group != null) {
             group.shutdownGracefully();
         }
-        log.info("ProbeMessageUdpServer udp server stop");
+        log.info("TestUdpServer udp server stop");
     }
 
 }

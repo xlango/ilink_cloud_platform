@@ -6,12 +6,10 @@ import com.qianli.ilink.cloud_platform.messagecenter.enums.MessageEnum;
 import com.qianli.ilink.cloud_platform.messagecenter.pojo.BaseInfo;
 import com.qianli.ilink.cloud_platform.messagecenter.pojo.dto.*;
 import com.qianli.ilink.cloud_platform.messagecenter.service.MessageSender;
+import com.qianli.ilink.cloud_platform.messagecenter.service.impl.BaseInfoServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -19,6 +17,9 @@ public class ApInfoController {
 
     @Autowired
     private MessageSender messageSender;
+
+    @Autowired
+    private BaseInfoServiceImpl baseInfoService;
 
     @RequestMapping(value = "/apbaseinfo", method = RequestMethod.POST,consumes = "application/x-protobuf")
     public void apBaseInfoReceive(@RequestBody ApBaseInfoProto.ApBaseInfo apBaseInfo) {
@@ -65,9 +66,11 @@ public class ApInfoController {
             return "";
         }
 
-        System.out.println(JSONObject.toJSONString(baseInfo));
-        messageSender.send(Message.builder().type(MessageEnum.BASE_INFO.getMsg()).body(JSONObject.toJSONString(baseInfo)).build());
+        System.out.println(baseInfo.getMAC());
+        baseInfoService.insertOrUpdate(baseInfo);
         return "{\"errcode\": \"0\",\"data\": {\"opcode\": \"0\",\"cloudServerIp\": \"192.168.10.252\",\"cloudServerPort\": \"20010\",\"cloudMgmtAddr\": \"http://192.168.10.252:80\",\"gatewayIp\": \"\",\"gatewayPort\": \"\",\"imageUpGrade\": {\"proto\": \"ftp\",\"serverip\": \"xx.xx.xx.xx\",\"usrname\": \"xx\",\"password\": \"xx\",\"path\": “ xx”,“file”: “xx”,“url”: \"http://xxxxx//xxx/url/apimage/ilinkos-2.0.0.1\",“version”: “xxxxxxxxxx”}}}";
     }
+
+
 
 }

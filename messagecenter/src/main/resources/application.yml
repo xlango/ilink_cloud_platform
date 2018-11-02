@@ -5,6 +5,40 @@ server:
 spring:
   application:
     name: messagecenter
+  datasource:
+    name: test
+    url: jdbc:mysql://192.168.10.29:3306/messagecenter?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+    allowMultiQueries: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: tk.mybatis.springboot.model
+mapper:
+  mappers: tk.mybatis.springboot.util.MyMapper
+  not-empty: false
+  identity: MYSQL
 async:
   threadpool:
     corePoolSize: ${CORE_POOL_SIZE:20}
@@ -12,7 +46,11 @@ async:
     queueCapacity: ${QUEUE_CAPACITY:500}
     keepAliveSeconds: ${KEEPALIVE_SECONDS:60}
 kafka:
-  messageTopic: ${MESSAGE_TOPIC:messageReceiver}
+  messageTopic: ${MESSAGE_TOPIC:test3}
   bootstrapServers: ${BOOTSTRAP_SERVERS:192.168.10.29:9092}
   batchSize: 16384
   lingerMs: 5000
+
+
+
+
