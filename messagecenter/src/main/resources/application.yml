@@ -1,8 +1,17 @@
-server:
-  port: ${SERVER_PORT:18888}
-#  servlet:
-#    context-path: /messagecenter
 spring:
+  server:
+    port: ${SERVER_PORT:18888}
+    #contextPath:
+    acceptorThreadCount: 10
+    minSpareThreads: 50
+    maxSpareThreads: 50
+    maxThreads: 800
+    acceptCount: 1024
+    maxConnections: 10000
+    processorCache: -1
+    protocol: org.apache.coyote.http11.Http11Nio2Protocol
+    connectionTimeout: 12000
+    enableLookUp: true
   application:
     name: messagecenter
   datasource:
